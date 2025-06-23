@@ -1,0 +1,15 @@
+
+.footer {
+  background-color: #004225;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer span {
+  color: #f5c518; /* Gold accent */
+  font-weight: 500;
+}

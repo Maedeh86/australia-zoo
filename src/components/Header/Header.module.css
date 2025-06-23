@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #004d40;
+  color: white;
+}
+
+.logo {
+  height: 90px;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: gold;
+}
+
+.active {
+  border-bottom: 2px solid gold;
+}

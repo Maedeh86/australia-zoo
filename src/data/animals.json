@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Echidna",
+    "group": "mammals",
+    "image": "images/Echidna.jpg",
+    "lifespan": "50 years",
+    "food": "Insects such as ants and termites, beetle larvae and worms",
+    "description": "Echidnas, also called spiny anteaters, are egg-laying mammals known for their spiny bodies and unique nose. They are monotremes like the platypus.",
+    "length": "76 cm",
+    "weight": "10 kg",
+    "found": "Throughout Australia"
+  },
+  {
+    "name": "Tasmanian Devil",
+    "group": "mammals",
+    "image": "images/Tasmanian-devils.jpg",
+    "lifespan": "5 years",
+    "food": "Meat from animals such as wallabies and wombats",
+    "description": "A carnivorous marsupial found in Tasmania, known for its screech and strong bite. It's the largest living carnivorous marsupial.",
+    "length": "70 cm",
+    "weight": "10 kg",
+    "found": "Tasmania"
+  },
+  {
+    "name": "Quokka",
+    "group": "mammals",
+    "image": "images/quokka.png",
+    "lifespan": "10 years",
+    "food": "Shrubs and grasses",
+    "description": "Small marsupial known for its friendly smile. Found on Rottnest Island, it resembles a tiny wallaby.",
+    "length": "50 cm",
+    "weight": "3 kg",
+    "found": "Rottnest Island and parts of Western Australia"
+  },
+  {
+    "name": "Frill-necked Lizard",
+    "group": "reptile",
+    "image": "images/Frilled-Dragon.png",
+    "lifespan": "20 years",
+    "food": "Small insects and spiders",
+    "description": "A lizard that opens its frilled neck and hisses when threatened. Found in Northern Australia.",
+    "length": "90 cm",
+    "weight": "1 kg",
+    "found": "Northern Australia"
+  },
+  {
+    "name": "Hawksbill Turtle",
+    "group": "reptile",
+    "image": "images/hawksbill-turtle.png",
+    "lifespan": "50 years",
+    "food": "Sponges, jellyfish, and sea plants",
+    "description": "A sea turtle with a beak-like mouth and overlapping shell scutes. Common in tropical coasts.",
+    "length": "80 cm",
+    "weight": "50 kg",
+    "found": "Tropical coasts of Queensland, NT, WA"
+  },
+  {
+    "name": "Perentie",
+    "group": "reptile",
+    "image": "images/Perentie.PNG",
+    "lifespan": "20 years",
+    "food": "Kangaroos, rabbits, lizards, birds",
+    "description": "Australia's largest monitor lizard. Shy and found in deserts. Revered in Aboriginal culture.",
+    "length": "2.5 m",
+    "weight": "20 kg",
+    "found": "Australian deserts"
+  },
+  {
+    "name": "Cassowary",
+    "group": "bird",
+    "image": "images/cassowary-01.jpg",
+    "lifespan": "20 years",
+    "food": "Fruits, insects, small animals",
+    "description": "Large flightless bird with powerful legs. Can swim and run fast. Dangerous when provoked.",
+    "length": "1.7 m",
+    "weight": "44 kg",
+    "found": "Queensland"
+  },
+  {
+    "name": "Kookaburra",
+    "group": "bird",
+    "image": "images/kookaburras.jpg",
+    "lifespan": "20 years",
+    "food": "Insects, snakes, frogs, lizards",
+    "description": "Known for its 'laughing' call, the kookaburra is the largest kingfisher species in Australia.",
+    "length": "43 cm",
+    "weight": "300 g",
+    "found": "Australia wide"
+  },
+  {
+    "name": "Yellow-tailed Black Cockatoo",
+    "group": "bird",
+    "image": "images/yellow-tailed.jpg",
+    "lifespan": "41 years",
+    "food": "Fruit, seeds, plant material",
+    "description": "Black cockatoo with yellow cheek patches and tail band. Found in forests of southeast Australia.",
+    "length": "65 cm",
+    "weight": "900 g",
+    "found": "Southeast Australia"
+  }
+]

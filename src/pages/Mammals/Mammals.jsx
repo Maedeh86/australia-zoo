@@ -1,34 +1,38 @@
 import { useState } from 'react';
 import animals from '../../data/animals.json';
-import AnimalCard from "../../components/AnimalCard/AnimalCard";
+import Sidebar from '../../components/sidebar/Sidebar';
+import AnimalCard from '../../components/AnimalCard/AnimalCard';
 import styles from './Mammals.module.css';
 
 function Mammals() {
   const mammalList = animals.filter(animal => animal.group === 'mammals');
   const [selected, setSelected] = useState(null);
 
+  const selectedAnimal = mammalList.find(animal => animal.name === selected);
+
+  const handleSelect = (name) => {
+    setSelected(prev => prev === name ? null : name);
+  };
+
   return (
     <div className={styles.container}>
-      <aside className={styles.sidebar}>
-        <h2>Mammals</h2>
-        <ul>
-          {mammalList.map(animal => (
-            <li
-              key={animal.name}
-              onClick={() => setSelected(animal.name)}
-              className={selected === animal.name ? styles.active : ''}
-            >
-              {animal.name}
-            </li>
-          ))}
-        </ul>
-      </aside>
+      <Sidebar
+        animals={mammalList}
+        activeAnimal={selected}
+        onSelect={handleSelect}
+        title="Mammals"
+      />
 
       <main className={styles.main}>
-        {!selected && <p className={styles.groupInfo}>Mammals are warm-blooded animals that usually have hair and produce milk for their young.</p>}
-        {selected && (
+        {!selectedAnimal && (
+          <p className={styles.groupInfo}>
+            Mammals are warm-blooded animals that usually have hair and produce milk for their young.
+          </p>
+        )}
+
+        {selectedAnimal && (
           <AnimalCard
-            animal={mammalList.find(a => a.name === selected)}
+            animal={selectedAnimal}
             short={false}
           />
         )}

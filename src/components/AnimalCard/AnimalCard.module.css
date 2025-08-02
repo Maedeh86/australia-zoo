@@ -56,6 +56,21 @@ a:hover {
   display: block;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
 

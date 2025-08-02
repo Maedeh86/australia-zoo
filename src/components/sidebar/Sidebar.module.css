@@ -4,6 +4,7 @@
   width: 250px;
   border-right: 2px solid #004d40;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .title {
@@ -15,6 +16,7 @@
 .list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .item {
@@ -34,4 +36,16 @@
   background-color: #004d40;
   color: #ffffff;
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #004d40;
+    margin-bottom: 1rem;
+  }
+
+  .item {
+    text-align: center;
+  }
 }

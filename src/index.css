@@ -66,4 +66,38 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .animal-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .animal-details {
+    width: 95%;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .animal-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 

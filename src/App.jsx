@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'; // حذف BrowserRouter از اینجا
+import { Routes, Route } from 'react-router-dom'; 
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import Mammals from './pages/Mammals/Mammals';
@@ -10,9 +10,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="mammals" element={<Mammals />} />
-        <Route path="birds" element={<Birds />} />
-        <Route path="reptiles" element={<Reptiles />} />
+        <Route path="mammal" element={<Mammals />} />
+        <Route path="bird" element={<Birds />} />
+        <Route path="reptile" element={<Reptiles />} />
       </Route>
     </Routes>
   );

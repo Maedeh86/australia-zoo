@@ -92,3 +92,30 @@
     margin: 0.5rem 0;
   }
 }
+@media (max-width: 480px) {
+  .modal {
+    padding: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .modalContent {
+    padding: 1rem;
+    font-size: 0.95rem;
+    max-width: 95%;
+    max-height: 90vh;
+  }
+
+  .modalImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+  }
+
+  .close {
+    font-size: 1.3rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+

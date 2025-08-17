@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import animals from "../../data/animals.json";
-import AnimalCard from "../../components/AnimalCard/AnimalCard";
+import { useState } from 'react';
+import animals from '../../data/animals.json';
 import Sidebar from '../../components/sidebar/Sidebar';
+import AnimalCard from '../../components/AnimalCard/AnimalCard';
 import styles from './Birds.module.css';
 
 function Birds() {
-  const birdList = animals.filter(animal => animal.group === 'bird');
+  const birdList = animals.filter(animal => animal.group?.toLowerCase() === 'bird');
   const [selected, setSelected] = useState(null);
 
   const selectedAnimal = birdList.find(a => a.name === selected);

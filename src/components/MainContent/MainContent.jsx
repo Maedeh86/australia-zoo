@@ -3,9 +3,9 @@ import AnimalCard from '../AnimalCard/AnimalCard';
 import { Link } from 'react-router-dom';
 
 const groupPaths = {
-  mammal: 'mammals',
-  reptile: 'reptiles',
-  bird: 'birds',
+  mammal: 'mammal',
+  reptile: 'reptile',
+  bird: 'bird',
 };
 
 function MainContent({ animal, showDetails, setShowDetails }) {
@@ -18,7 +18,9 @@ function MainContent({ animal, showDetails, setShowDetails }) {
       </div>
     );
   }
-
+  const groupKey = animal.group?.toLowerCase();
+  console.log("groupKey:", groupKey);
+  const groupRoute = groupPaths[groupKey] || 'mammals';
   return (
     <div className={styles.main}>
       {!showDetails ? (
@@ -30,14 +32,27 @@ function MainContent({ animal, showDetails, setShowDetails }) {
       ) : (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
-            <button className={styles.close} onClick={() => setShowDetails(false)}>×</button>
+            <button
+              className={styles.close}
+              onClick={() => setShowDetails(false)}
+            >
+              ×
+            </button>
             <h2>{animal.name}</h2>
             <img
               src={animal.image}
               alt={animal.name}
               className={styles.modalImage}
             />
-            <p><strong>Group:</strong> <Link to={`/${groupPaths[animal.group]}`}>{animal.group}</Link></p>
+            <p>
+              <strong>Group:</strong>{' '}
+              <Link
+                to={`/${groupRoute}`}
+                onClick={() => setShowDetails(false)}
+              >
+                {animal.group}
+              </Link>
+            </p>
             <p><strong>Lifespan:</strong> {animal.lifespan}</p>
             <p><strong>Length:</strong> {animal.length}</p>
             <p><strong>Weight:</strong> {animal.weight}</p>

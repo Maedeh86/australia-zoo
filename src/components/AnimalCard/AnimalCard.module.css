@@ -71,6 +71,33 @@ a:hover {
     text-align: center;
   }
 }
+@media (max-width: 480px) {
+  .card {
+    padding: 0.8rem;
+    margin: 0.5rem;
+    text-align: center;
+  }
+
+  .image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
 
 
 

@@ -1,7 +1,7 @@
 [
   {
     "name": "Echidna",
-    "group": "mammal",
+    "group": "mammals",
     "image": "images/Echidna.jpg",
     "lifespan": "50 years",
     "food": "Insects such as ants and termites, beetle larvae and worms",
@@ -12,7 +12,7 @@
   },
   {
     "name": "Tasmanian Devil",
-    "group": "mammal",
+    "group": "mammals",
     "image": "images/Tasmanian-devils.jpg",
     "lifespan": "5 years",
     "food": "Meat from animals such as wallabies and wombats",
@@ -23,7 +23,7 @@
   },
   {
     "name": "Quokka",
-    "group": "mammal",
+    "group": "mammals",
     "image": "images/quokka.png",
     "lifespan": "10 years",
     "food": "Shrubs and grasses",

@@ -19,7 +19,6 @@ function MainContent({ animal, showDetails, setShowDetails }) {
     );
   }
   const groupKey = animal.group?.toLowerCase();
-  console.log("groupKey:", groupKey);
   const groupRoute = groupPaths[groupKey] || 'mammals';
   return (
     <div className={styles.main}>

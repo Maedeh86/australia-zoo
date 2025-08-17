@@ -5,7 +5,7 @@ import AnimalCard from '../../components/AnimalCard/AnimalCard';
 import styles from './Mammals.module.css';
 
 function Mammals() {
-  const mammalList = animals.filter(animal => animal.group === 'mammals');
+  const mammalList = animals.filter(animal => animal.group === 'mammal');
   const [selected, setSelected] = useState(null);
 
   const selectedAnimal = mammalList.find(animal => animal.name === selected);

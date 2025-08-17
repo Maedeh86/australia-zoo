@@ -3,9 +3,9 @@ import AnimalCard from '../AnimalCard/AnimalCard';
 import { Link } from 'react-router-dom';
 
 const groupPaths = {
-  mammal: 'mammal',
-  reptile: 'reptile',
-  bird: 'bird',
+  mammal: 'mammals',
+  reptile: 'reptiles',
+  bird: 'birds',
 };
 
 function MainContent({ animal, showDetails, setShowDetails }) {

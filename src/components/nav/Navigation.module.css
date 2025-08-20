@@ -1,14 +1,17 @@
 .navbar {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  flex-wrap: wrap;  
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   background-color: #004d40;
-  padding: 1rem;
-  font-size: 1.1rem;
-  font-weight: bold;
+  padding: 0.5rem 1rem;
   border-top: 1px solid #00332e;
   border-bottom: 1px solid #00332e;
+  width: 100%;
+  box-sizing: border-box; 
 }
+
 
 .link {
   color: #f1f8e9;
